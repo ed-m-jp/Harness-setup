@@ -1,0 +1,3 @@
+interface:
+  display_name: "Review Handoff"
+  short_description: "Per-run review folders for Claude-to-Codex handoff"

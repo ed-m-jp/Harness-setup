@@ -1,0 +1,110 @@
+{
+  "cleanupPeriodDays": 365,
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "75",
+    "BASH_MAX_OUTPUT_LENGTH": "150000",
+    "WORKFLOW_LOGS_GH_OWNER": "zaikoio",
+    "WORKFLOW_LOGS_ARTIFACT_URL": "https://claude.ai/artifact/8Z9aLqErhgvBgeFDLKgztg"
+  },
+  "permissions": {
+    "deny": [
+      "Bash(gh repo delete:*)",
+      "Bash(gh release delete:*)",
+      "Bash(gh secret set:*)",
+      "Bash(gh secret delete:*)",
+      "Bash(gh cache delete:*)",
+      "Bash(gh gist delete:*)",
+      "Bash(gh ssh-key delete:*)",
+      "Bash(gh gpg-key delete:*)",
+      "Bash(gh label delete:*)",
+      "Bash(gh variable delete:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git push --force-if-includes:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push --delete:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean -f:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(git clean -d:*)",
+      "Bash(git branch -D:*)",
+      "Bash(git tag -d:*)",
+      "Bash(git stash clear:*)",
+      "Bash(git stash drop:*)",
+      "Bash(git checkout -f:*)",
+      "Bash(git switch -f:*)",
+      "Bash(git switch --discard-changes:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git reflog expire:*)",
+      "Bash(git push -d:*)",
+      "Bash(git push origin :*)",
+      "Bash(git checkout --force:*)",
+      "Bash(git switch --force:*)",
+      "Bash(git tag --delete:*)",
+      "Bash(git branch --delete --force:*)",
+      "Bash(rm -rf:*)",
+      "Bash(rm -r:*)",
+      "Bash(rm -R:*)",
+      "Bash(rm -fr:*)",
+      "Bash(rm --recursive:*)",
+      "Bash(bash -c:*)",
+      "Bash(sh -c:*)",
+      "Bash(eval:*)"
+    ],
+    "defaultMode": "plan"
+  },
+  "model": "opus",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/edward_maire/.claude/statusline-command.sh"
+  },
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true,
+    "slack@claude-plugins-official": true,
+    "watch@claude-video": true,
+    "workflow-logs@workflow-logs": true
+  },
+  "extraKnownMarketplaces": {
+    "chrome-devtools-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ChromeDevTools/chrome-devtools-mcp"
+      }
+    },
+    "claude-video": {
+      "source": {
+        "source": "github",
+        "repo": "bradautomates/claude-video"
+      }
+    },
+    "workflow-logs": {
+      "source": {
+        "source": "directory",
+        "path": "/mnt/c/Users/edward.maire/PhpstormProjects/workflow-logs"
+      }
+    }
+  },
+  "effortLevel": "xhigh",
+  "modelSettings": {
+    "claude-sonnet-5": {
+      "effortLevel": "high"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    }
+  },
+  "autoMemoryEnabled": true,
+  "autoDreamEnabled": true,
+  "theme": "dark-daltonized",
+  "autoCompactEnabled": true,
+  "switchModelsOnFlag": false,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "autoMode": {
+    "soft_deny": [
+      "$defaults",
+      "Bash(playwright-cli:*zaiko.io*)",
+      "Bash(mysql:* -h *prod*)"
+    ]
+  }
+}

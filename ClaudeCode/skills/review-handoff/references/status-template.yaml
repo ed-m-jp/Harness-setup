@@ -1,0 +1,18 @@
+review:
+  id: review-YYYY-MM-DD-HHMMSS
+  source_file: reviews/review-YYYY-MM-DD-HHMMSS/review.md
+
+items:
+  - id: R-001
+    status: open
+    owner: remediation-agent
+    notes: ""
+    files_changed: []
+    tests_added: []
+
+  - id: R-002
+    status: open
+    owner: remediation-agent
+    notes: ""
+    files_changed: []
+    tests_added: []
