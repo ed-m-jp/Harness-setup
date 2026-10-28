@@ -95,3 +95,11 @@ Valid personas and when to use them:
 For reviews, produce **separate outputs** for Logic, Security, and EdgeCase.
 For brief confirmations or casual replies, omit the tag.
 Full persona details: `$CLAUDE_HOME/skills/personas`
+
+---
+
+## Global Memory
+
+Index of cross-project memories; linked files live in `~/.claude/memory/`.
+
+@MEMORY.md
